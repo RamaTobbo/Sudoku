@@ -1,10 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import GlobalStyle from './styles/global'; 
 
 function App() {
   return (
-   <h1>Sudoku game</h1>
+    <>
+    <GlobalStyle/>
+       <h1>Sudoku game</h1>
+       </>
+
   );
 }
 

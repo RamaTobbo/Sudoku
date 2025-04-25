@@ -4,15 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { ThemeProvider } from 'styled-components'
+
+import { Content} from './components'
+
+import { GlobalStyles, theme } from './styles'
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
-    
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <>
+        <Content>
+  <h1>Sudoku game</h1>
+        </Content>
+        <App />
+      </>
+    </ThemeProvider>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

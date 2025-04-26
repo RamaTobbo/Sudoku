@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components'
 import { Content,Title,Card} from './components'
 
 import { GlobalStyles, theme } from './styles'
+import Grid from './components/grid/ndex';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,7 +21,7 @@ root.render(
     <Content data-cy="content">
       <Title data-cy="title">Sudoku</Title>
       <Card data-cy="card">
-       
+       <Grid/>
       </Card>
     </Content>
   </ThemeProvider>,

@@ -6,4 +6,5 @@ export const Content = styled.div`
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  background:#5C7285;
 `

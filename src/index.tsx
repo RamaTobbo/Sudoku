@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider } from 'styled-components'
 
-import { Content} from './components'
+import { Content,Title,Card} from './components'
 
 import { GlobalStyles, theme } from './styles'
 
@@ -16,14 +16,14 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <>
-        <Content>
-  <h1>Sudoku game</h1>
-        </Content>
-        <App />
-      </>
-    </ThemeProvider>
+    <GlobalStyles />
+    <Content data-cy="content">
+      <Title data-cy="title">Sudoku</Title>
+      <Card data-cy="card">
+       
+      </Card>
+    </Content>
+  </ThemeProvider>,
   </React.StrictMode>
 );
 

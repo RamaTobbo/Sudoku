@@ -31,6 +31,19 @@ function fillGrid(grid: GRID) {
 
     if (grid[row][col] === 0) {
       shuffle(numbers)
+      for(let value of numbers){
+        if(!grid[row].includes(value)){
+            let isNotInCol=true
+            for(let i = 0;i<9;i++){
+            if(value=== grid[i][col]) isNotInCol=false
+        }
+        if(isNotInCol){}
+        
+        }
+
+
+        grid[row][col]=value
+      }
     
       break
     }
